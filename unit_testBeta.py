@@ -12,4 +12,4 @@ def test_multiplicacion(a, b):
 
 def test_division(a, b):
     assert b == 0 #es una division que no se puede realizar
-    assert divison(a, b) > 0 #es un valor positivo
+    assert division(a, b) > 0 #es un valor positivo
