@@ -4,7 +4,7 @@ import calculadora;
 class TestCalculadora (unittest.TestCase):
 
     def test_sum(self):
-        self.assertEqual(calculadora.suma(5, 7), 12)
+        self.assertEqual(calculadora.suma(5, 7), 11)
 
     def test_resta(self):
       self.assertEqual(calculadora.resta(4,3), 1)
