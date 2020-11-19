@@ -10,6 +10,9 @@ def step_imp(context, values):
 def step_imp(context):
         context.total = context.calc.dividir(context.values[0], context.values[1])
 
-@then('{total:d} of divide is ok')
+@then('{total} of divide is ok')
 def step_imp(context, total):
-    assert (context.total == total)
+    if total == 'No se puede dividir por cero':
+        assert (context.total == 'No se puede dividir por cero')
+    else:
+        assert (context.total == int(total))
